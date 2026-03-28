@@ -1,0 +1,7 @@
+p#mensaje {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    width: 800px;
+}

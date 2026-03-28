@@ -1,7 +1,46 @@
-p#mensaje {
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+}
+
+p{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: large;
     text-align: center;
-    width: 800px;
+}
+
+p#mensaje {
+    text-align: center;
+    margin: auto;
+}
+
+canvas{
+    margin: auto;
+    display: none;
+    border: 1px solid black;
+}
+
+button{
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+}
+
+button#nuevoJuego{
+    display: none;
+}
+
+input{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
 }

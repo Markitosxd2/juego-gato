@@ -1,30 +1,24 @@
-🎮 Juego de Gato
+# 🎮 Juego de Gato
 
 Juego de Gato (Tic-Tac-Toe) para 2 jugadores en el mismo dispositivo, desarrollado con HTML5 Canvas.
 
-🕹️ ¿Cómo jugar?
+## 🕹️ ¿Cómo jugar?
 
-Ingresa un número del 3 al 7 para elegir el tamaño del tablero
-Haz clic en "Empezar juego" para iniciar el juego
-Los jugadores se turnan haciendo clic en las casillas
+1. Elige el tamaño del tablero (3×3 hasta 7×7)
+2. Haz clic en **Empezar Juego** para iniciar
+3. Los jugadores se turnan haciendo clic en las casillas
+   - **Jugador 1** coloca una X (Tache)
+   - **Jugador 2** coloca un círculo
+4. Gana el primero en completar una fila, columna o diagonal
+5. Haz clic en **Nuevo Juego** para reiniciar
 
-Jugador 1 coloca una X (Tache)
+## 🛠️ Tecnologías
 
-Jugador 2 coloca un O (Círculo)
+- HTML5
+- CSS3
+- JavaScript
+- Canvas API
 
+## ✅ Estado del proyecto
 
-Gana el primero en completar una fila, columna o diagonal
-
-Haz clic en "Nuevo Juego" para reiniciar
-
-🛠️ Tecnologías
-
-HTML5
-CSS3
-JavaScript
-Canvas API
-
-🚧 Estado del proyecto:
-En desarrollo — mejoras pendientes:
-
-Mejorar el diseño visual
+Funcional — sin mejoras pendientes.

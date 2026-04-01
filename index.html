@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>GATO</title>
     </head>
-    <body >
+    <body>
         <h1>Juego del Gato</h1>
+        <p id="subtitulo">- 2 Jugadores • 3×3 a 7×7 —</p>
         <p id="mensaje"></p>
         <div id="configuracion">
-            <p>Ingrese el tamaño del tablero (3-7):</p>
-            <input type="number" id="tamano" min="3" max="7">
+            <p id="p-tamano">Ingrese el tamaño del tablero (3-7):</p>
+            <input type="number" id="tamano" min="3" max="7" value="3">
             <button onclick="dibuja()">Empezar Juego</button >
         </div>
         <canvas id="lienzo" width="800" height="800" onmousedown="position()"></canvas>

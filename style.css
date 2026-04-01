@@ -1,46 +1,150 @@
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     text-align: center;
     width: 100%;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #c77dff, #00f0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: large;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 p#mensaje {
-    text-align: center;
     margin: auto;
+    color:#ffd60a;
 }
 
 canvas{
     margin: auto;
     display: none;
-    border: 1px solid black;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    margin-top: 24px;
+    background-color: #0d0d20;
+    box-shadow: 0 0 20px #00f0ff33;
+    transition: box-shadow 0.3s;
+    width: clamp(300px, 80vw, 600px);
+    height: clamp(300px, 80vw, 600px);
 }
 
 button{
     margin: auto;
     margin-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: large;
+    background-color: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 10px #00f0ff55;
+    text-shadow: 0 0 5px #00f0ff;
+    padding : 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 button#nuevoJuego{
     display: none;
+    color: #ff2a6d;
+    border-color: #ff2a6d;
+    box-shadow: 0 0 10px #ff2a6d55;
+    text-shadow: 0 0 5px #ff2a6d;
+    font-size: medium;
+    margin-top: 16px;
 }
 
 input{
     display: block;
     margin: auto;
     margin-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: large;
+    background-color: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00f0ff55;
+    text-shadow: 0 0 5px #00f0ff;
+    padding: 10px 16px;
+    width: 80px;
+    text-align: center;
+}
+
+body{
+    background: radial-gradient(ellipse at top, #1a1a3e 0%, #06060f 70%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+button:hover{
+    background-color: #00f0ff;
+    color: #1a1a2e;
+    border-color: transparent;
+}
+button#nuevoJuego:hover{
+    background-color: #ff2a6d;
+    color: #1a1a2e;
+    border-color: transparent;
+}
+
+p#subtitulo{
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
+    font-size: small;
+    color: #55a;
+    text-shadow: 0 0 5px #55a;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+p#p-tamano{
+    font-size: medium;
+    color: #55a;
+    text-shadow: 0 0 5px #55a;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+}
+
+#configuracion{
+    background-color: #0d0d20;
+    border: 1px solid #1a1a35;
+    border-radius: 12px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    margin: 16px auto 0;
+}
+
+input:focus{
+    outline: none;
+    border-color: #c77dff;
+    box-shadow: 0 0 8px #c77dff55;
+}
+
+canvas:hover{
+    box-shadow: 0 0 35px #00f0ff55;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
